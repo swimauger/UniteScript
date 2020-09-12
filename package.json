@@ -1,0 +1,26 @@
+{
+  "name": "unitescript",
+  "version": "1.0.0",
+  "description": "An Esoteric Programming Language built in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swimauger/UniteScript.git"
+  },
+  "keywords": [
+    "Programming",
+    "Language",
+    "Esoteric",
+    "Unite",
+    "Script"
+  ],
+  "author": "Mark Auger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/swimauger/UniteScript/issues"
+  },
+  "homepage": "https://github.com/swimauger/UniteScript#readme"
+}
