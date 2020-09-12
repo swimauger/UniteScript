@@ -20,6 +20,7 @@ class Lexer {
     }
 
     static evaluate(line) {
+        console.log(line);
         const symbols = [];
         let str = "";
         let strType = "";
@@ -40,18 +41,27 @@ class Lexer {
                 symbols.push({ type: 'operator', value: word });
             } else if (this.isIdentifier(word)) {
                 if (this.isString(word[0]) || this.isString(word[word.length-1])) {
-                    if (word[0] === word[word.length-1]) {
+                    if (word === strType) {
+                        str += ' ';
+                        symbols.push({ type: 'string', value: str});
+                        strType = '';
+                        str = '';
+                    } else if (word.length > 1 && word[0] === word[word.length-1]) {
                         symbols.push({ type: 'string', value: word.substr(1, word.length-1) });
                     } else if (this.isString(word[0])) {
                         strType = word[0];
-                        str += word.substr(1, word.length);
+                        if (word.length > 1) {
+                            str += word.substr(1, word.length);
+                        }
                     } else if (word[word.length-1] === strType) {
                         str += ` ${word.substr(0, word.length-1)}`;
                         symbols.push({ type: 'string', value: str });
+                        strType = '';
+                        str = '';
                     } else {
                         str += ` ${word}`;
                     }
-                } else if (str) {
+                } else if (strType) {
                     str += ` ${word}`;
                 } else {
                     if (this.isKeyword(word)) {
