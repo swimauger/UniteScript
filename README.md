@@ -14,8 +14,7 @@ First install Emscripten (info on how to install [here](https://emscripten.org/d
 Then install the NPM package
 ` npm install unitescript -g # or yarn global add unitescript `
 
-Run `usc` against your UniteScript file like so
-` usc file-name `
+Run `usc <unitescript-file>` OR `usc` to compile every UniteScript file recursively in the working directory
 
 ## Writing in UniteScript
 UniteScript is closely integrated with JavaScript and as such anything outside of a function is treated as JavaScript
