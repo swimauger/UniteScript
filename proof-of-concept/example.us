@@ -11,7 +11,8 @@ class Example {
   }
 
   exampleCpp(): c++<void> {
-    std::cout << "Example of running C++" << std::endl;
+    int num = 50;
+    std::cout << "Arithmetic in C++: " << num*3 << std::endl;
   }
 
   exampleJavaScript(): js<void> {
@@ -19,4 +20,9 @@ class Example {
   }
 }
 
+function test(): c++<void> {
+  std::cout << "This is a test from C++" << std::endl;
+}
+
 Example.runEverything();
+test();
