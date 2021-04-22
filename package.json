@@ -1,0 +1,12 @@
+{
+  "name": "unitescript",
+  "version": "1.0.0-concept",
+  "license": "Apache-2.0",
+  "description": "🔗 A programming language to use multiple languages interchangeably",
+  "bin": {
+    "usc": "./proof-of-concept/unitescript.js"
+  },
+  "dependencies": {
+    "md5": "^2.3.0"
+  }
+}

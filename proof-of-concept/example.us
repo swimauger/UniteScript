@@ -1,0 +1,22 @@
+class Example {
+  static runEverything(): js<void> {
+    const hello = new Example();
+    hello.exampleC();
+    hello.exampleCpp();
+    hello.exampleJavaScript();
+  }
+
+  exampleC(): c<void> {
+    printf("Example of running C\n");
+  }
+
+  exampleCpp(): c++<void> {
+    std::cout << "Example of running C++" << std::endl;
+  }
+
+  exampleJavaScript(): js<void> {
+    console.log("Example of running JavaScript");
+  }
+}
+
+Example.runEverything();
