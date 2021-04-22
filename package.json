@@ -1,6 +1,6 @@
 {
   "name": "unitescript",
-  "version": "1.0.1-concept",
+  "version": "1.0.2-concept",
   "license": "Apache-2.0",
   "description": "🔗 A programming language to use multiple languages interchangeably",
   "bin": {
