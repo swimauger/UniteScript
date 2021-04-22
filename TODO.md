@@ -1,0 +1,5 @@
+- <s>Make compiler compile all UniteScript files when none are specified</s>
+- Add Return Types
+- Add Arguments and Argument Types
+- Add imports
+- Create package manager (upm)
